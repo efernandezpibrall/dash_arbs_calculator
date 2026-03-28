@@ -1,0 +1,179 @@
+/**
+ * UFC Calculator Dashboard - Custom Styles
+ * McKinsey Blue (#2E86C1) Theme
+ */
+
+:root {
+    /* Primary Colors */
+    --color-primary: #2E86C1;
+    --color-primary-light: #5DADE2;
+    --color-primary-dark: #1B4F72;
+
+    /* Text Colors */
+    --color-text-primary: #1f2937;
+    --color-text-secondary: #374151;
+    --color-text-tertiary: #6b7280;
+    --color-text-white: #ffffff;
+
+    /* Backgrounds */
+    --color-bg-white: #ffffff;
+    --color-bg-light: #f9fafb;
+    --color-bg-lighter: #f8f9fa;
+
+    /* Typography */
+    --font-family-primary: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-light);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+}
+
+/* Refresh Button */
+.btn-refresh {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-refresh:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.btn-refresh:active {
+    background-color: var(--color-primary-dark);
+    transform: scale(0.98);
+}
+
+/* Dropdown Styling */
+.Select-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 38px;
+}
+
+.Select-control:hover {
+    border-color: var(--color-primary);
+}
+
+.Select-menu-outer {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Select-option:hover {
+    background-color: var(--color-primary-light);
+    color: white;
+}
+
+/* Date Picker Styling */
+.DateInput {
+    width: 200px;
+}
+
+.DateInput_input {
+    padding: 8px 12px;
+    font-size: var(--font-size-base);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.DateInput_input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(46, 134, 193, 0.1);
+}
+
+.CalendarDay__selected {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.CalendarDay__selected:hover {
+    background: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+}
+
+/* Section Content Styling */
+.section-content {
+    padding: 15px;
+    background-color: var(--color-bg-white);
+}
+
+.section-content div {
+    margin-bottom: 8px;
+    line-height: 1.8;
+}
+
+/* Strong text in sections */
+strong {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 12px 0;
+}
+
+/* Card-like containers */
+.card-container {
+    background-color: var(--color-bg-white);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Utility Classes */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-muted {
+    color: var(--color-text-tertiary);
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-semibold {
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-refresh {
+        padding: 6px 16px;
+        font-size: var(--font-size-sm);
+    }
+}
